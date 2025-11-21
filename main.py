@@ -38,7 +38,6 @@ async def on_ready():
     await bot.load_extension("cogs.battle")
     await bot.load_extension("cogs.leaderboard")
     await bot.load_extension("cogs.trade")
-    await bot.load_extension("cogs.give")
 
     if GUILD_ID:
         await bot.tree.sync(guild=discord.Object(id=int(GUILD_ID)))
